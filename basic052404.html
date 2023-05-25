@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS기본-display네이버로그인화면</title>
+  <style>
+    * {
+      margin: 0; padding: 0; /*reset.css*/
+    }
+    /* main contents */
+    #wrapper {
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 5px;
+      margin: 30px auto;
+      width: 400px;
+      padding: 30px 30px;
+    }
+    p {
+      text-align: center;
+    }
+    div.text {
+      text-align: center;
+      color: rgb(133, 133, 134);
+    }
+    div.text>span {
+      display: inline-block;
+      border-right: 1px solid grey;
+      padding: 0 10px;
+    }
+    div.text>span:nth-child(3) { /*div.text>span:nth-child(n) 부모안에 있는 요소중 n번째 자식 '>'는 하위가 아니라 자식이다*/ 
+      border-right: none;
+    }
+    p.login {
+      background-color: rgb(65, 177, 75);
+      color: aliceblue;
+      border-radius: 10px;
+      padding: 20px 0;
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+    <p class="login"><strong><a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">NAVER 로그인</a></strong></p>
+    <div class="text">
+      <span>아이디 찾기</span> 
+      <span>비밀번호 찾기</span>
+      <span>회원가입</span>
+    </div>
+  </div>
+</body>
+</html>
