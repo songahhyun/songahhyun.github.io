@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS기본-box 넷플릭스 아이콘</title>
+  <style>
+    
+    #wrapper {
+      
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgb(233, 219, 219);
+      
+    }
+    .btn
+      {
+      margin: 10% auto; /*위,아래는 10% 오른쪽,왼쪽은 auto*/
+      border: 1px solid rgb(238, 226, 226);
+      border-radius: 25px;
+      width: 50%;
+      height: 50%;
+      box-shadow: 2px 9px 10px rgb(151, 149, 149);
+      transition: 1s; /*btn에서 호버 움직일때 시간*/
+    }
+    .btn:hover { /*가상선택자 : 호버 - 마우스 올라갔을때 이벤트*/ 
+      box-shadow: 10px -9px 10px rgb(151, 149, 149);
+    }
+    p {
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      color: rgb(0, 0, 0);
+    }
+    
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 100px;
+      height: 100px;
+      box-shadow: 2px 9px 10px rgb(243, 21, 21),
+                  4px 10px 10px rgb(14, 8, 7) ;
+      border-radius: 25px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="btn">
+      <a href="http://www.netflix.com/kr">
+        <img src="../logo/넷플릭스로고.png" alt="넷플" >
+      </a>
+    </div>
+    <p>
+      넷플릭스
+    </p>
+  </div>
+</body>
+</html>
